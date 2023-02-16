@@ -1,0 +1,67 @@
+.CardContent{
+    text-align: start;
+    align-items: flex-start;
+    padding: 7em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+        
+.CardTitle{
+    font-size: 3.4vw;
+}
+.CardDescription{
+        margin-top: 0.5em;
+    color: gray;
+    font-size: 1.2vw;
+    line-height: 1.5;
+}
+.GetInvite{
+    font-size: 1vw;
+}
+
+.HeroContent{
+    text-align: start;
+    align-items: flex-start;
+    padding: 7em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (max-width:1024px) and (min-width: 768px) {
+    .CardContent{
+        padding: 4vw;
+        
+    }
+    
+
+    .CardDescription{
+        margin-top: 0.5em;
+    color: gray;
+    font-size: 1.5vw;
+    line-height: 1.5;
+}
+.GetInvite{
+    font-size: 1.8vw;
+}
+
+}
+
+@media (max-width:768px)  {
+    .CardContent{
+        padding: 4em 2em;
+        
+    }
+    .CardTitle{
+        font-size: 11vw;
+        width: 90%;
+    }
+
+    .CardDescription{
+        font-size: 4vw;
+    }
+    .GetInvite{
+        font-size: 4vw;
+    }
+}

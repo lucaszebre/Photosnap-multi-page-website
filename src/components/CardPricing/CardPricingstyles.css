@@ -1,0 +1,78 @@
+.PricingContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 30vw;
+    background-color: #F5F5F5;
+    margin-right: 2em;
+    padding: 2em;
+    
+}
+
+.PricingLevel{
+    font-size: 2.8vw;
+    color: black;
+}
+
+.PricingDescription{
+    margin-bottom: 1em;
+    line-height: 1.4;
+    font-size: 1.4vw;
+    justify-self: center;
+    text-align: center;
+    color: gray;
+    margin-top: 1em;
+}
+
+.Pricing{
+    color: black;
+    font-size: 2vw;
+    font-weight: 700;
+    margin-bottom: .5em;
+}
+
+.PickPlan{
+    margin-top: .8em;
+    cursor: pointer;
+    width: 90%;
+    font-size: 1vw;
+    height: 3vw;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+.PricingDuring{
+    font-size: 1.2vw;
+    color: gray;
+    margin-top: .5em;
+}
+
+@media (max-width: 768px) {
+    .PricingContainer{
+        margin: 1em 0 1em 0;
+        width: 100%;
+        margin-right: 0;
+        height: 80vw;
+        padding: 0;
+    }
+    .PricingLevel{
+        font-size: 7vw;
+    }
+    .PricingDescription{
+        font-size: 4vw;
+    }
+    .Pricing{
+        font-size: 5vw;
+    }
+
+    .PricingDuring{
+        font-size: 3vw;
+    }
+    .PickPlan{
+        font-size: 2vw;
+        height: 6vw;
+        font-weight: 700;
+    }
+}

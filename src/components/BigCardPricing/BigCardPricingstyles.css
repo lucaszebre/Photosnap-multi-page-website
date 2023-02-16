@@ -1,0 +1,80 @@
+.BigPricingContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 35vw;
+    background-color: black;
+    margin-right: 2em;
+    padding: 2em;
+    
+}
+
+.BigPricingLevel{
+    font-size: 2.8vw;
+    color: #fff;
+}
+
+.BigPricingDescription{
+    margin-bottom: 1em;
+    line-height: 1.4;
+    font-size: 1.4vw;
+    justify-self: center;
+    text-align: center;
+    color: gray;
+    margin-top: 1em;
+}
+
+.BigPricing{
+    color: #fff;
+    font-size: 2vw;
+    font-weight: 700;
+    margin-bottom: .5em;
+}
+
+.BigPickPlan{
+    margin-top: .8em;
+    cursor: pointer;
+    width: 90%;
+    height: 3vw;
+    background-color: #fff;
+    color:black;
+    border: none;
+    font-size: 1vw;
+}
+
+.BigPricingDuring{
+    font-size: 1.2vw;
+    color: gray;
+    margin-top: .5em;
+}
+
+
+    @media (max-width: 768px) {
+        .BigPricingContainer{
+            margin: 1em 0 1em 0;
+            width: 100%;
+            margin-right: 0;
+            height: 80vw;
+            padding: 0;
+        }
+        .BigPricingLevel{
+            font-size: 7vw;
+        }
+        .BigPricingDescription{
+            font-size: 4vw;
+        }
+        .BigPricing{
+            font-size: 5vw;
+        }
+    
+        .BigPricingDuring{
+            font-size: 3vw;
+        }
+        .BigPickPlan{
+            font-size: 2vw;
+            height: 6vw;
+            font-weight: 700;
+        }
+    }
+

@@ -1,0 +1,129 @@
+.HeroStorieContainer{
+    width: 100%;
+    height: 650px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.HeroStorieImageD{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+.HeroStorieImageM,.HeroStorieImageT{
+    display: none;
+}
+.StorieTopText,.StorieCenterText,.StorieDate,.StorieDescription,.StorieRowText{
+    color: white;
+    
+}
+
+.HeroStorieContent{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 4em 0 0 4em;
+    width: 35%;
+    text-align: left;
+}
+
+.StorieTopText{
+    font-size:1.4rem;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+.StorieCenterText{
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+.StorieDate{
+    font-size: 1rem;
+    font-weight: 200;
+    color: white;
+    margin-bottom: 1em;
+}
+
+.StorieDate span{
+    font-weight: 700;
+    color: rgb(218, 206, 206);
+}
+
+.StorieDescription{
+    font-size: 1.2rem;
+    font-weight: 200;
+    color: rgb(218, 206, 206);
+    margin-bottom: 1em;
+    line-height: 1.3;
+}
+
+.StorieRow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.StorieRowText{
+    margin-right: 1em;
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+    .HeroStorieImageD,.HeroStorieImageM{
+        display: none;
+    }
+    .HeroStorieImageT{
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .HeroStorieContent{
+        width: 60%;
+    }
+}
+
+
+@media (max-width:768px){
+    .HeroStorieImageM{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .HeroStorieImageD,.HeroStorieImageT{
+        display: none;
+    }
+
+    .HeroStorieContainer{
+        height: 100%;
+    }
+
+    .HeroStorieContainer{
+            display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        
+    }
+    .HeroStorieContent{
+        width: 100%;
+        height: 100%;
+        padding: 4em 4em 4em 4em;
+        background-color: black;
+    }
+
+    .StorieDescription{
+        font-size: 1.3rem;
+    }
+}

@@ -1,0 +1,110 @@
+.CompareRow{
+    width: 100%;
+    padding: 1em 0 1em 0;
+    display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: 2rem;
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+border-bottom: 1px solid #D8D8D8;
+}
+
+.Firscell{
+    width: 100%;
+    margin-top: 3em;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 4rem;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    border-bottom: 1px solid black;
+    padding-bottom: 1em;
+}
+
+.CompareTitle{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 0.5em;
+}
+
+.CompareContainer{
+    margin-bottom: 10em;
+}
+
+.CompareTable{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.CompareContainerM{
+    display: none;
+}
+@media (max-width:1024px) and (min-width:670px){
+    .CompareContainer{
+        width: 80%;
+    }
+    .CompareTable{
+        width: 100%;
+    }
+}
+
+@media (max-width:670px){
+    .CompareContainer{
+        display: none;
+    }
+    .CompareContainerM{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin-bottom: 10em;
+    }
+
+    .CompareTitle{
+        font-size: 3vw;
+        font-weight: 700;
+        color: #000000;
+        margin-bottom: 0.5em;
+        text-align: start;
+        border-bottom: 1px solid black;
+        padding-bottom: 0.5em;
+    }
+    
+    .CompareCardTitle{
+        margin-top: 1em;
+        font-size: 2.5vw;
+        font-weight: 700;
+        color: #000000;
+        margin-bottom: 0.5em;
+        text-align: start;
+        
+        padding-bottom: 0.5em;
+    }
+
+    .CompareCardCheck{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        border-bottom: 1px solid #D8D8D8;
+        padding-bottom: 1em;
+
+    }
+    .CompareCardItems{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-items: center;
+        width: 100%;
+        
+    }
+
+    .CompareCardItems p{
+        font-size: 3vw;
+        margin-bottom: 1em;
+        font-weight: 500;
+        color: #D8D8D8;
+    }
+}

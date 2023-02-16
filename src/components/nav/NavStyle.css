@@ -1,0 +1,96 @@
+.NavContainer{
+    display:flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1.5em;
+    margin-bottom: 1rem;
+}
+
+.NavWrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+.NavList{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.NavItems{
+    list-style: none;
+    margin: 0 1rem;
+    font-weight: 500;
+    font-size: 1.6vw;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.NavItems:hover,.NavItems:active{
+    color: #DFDFDF;
+}
+
+.NavButton{
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    width: 10.972vw;
+    height: 2.778vw;
+    font-size: 1vw;
+    border: none;
+    cursor: pointer;
+}
+
+.NavButton:hover,.NavButton:active{
+    background-color: #DFDFDF;
+    color: black;
+    
+}
+
+.NavLogo{
+    width: 11.806vw;
+    height: 1.111vw;
+    min-width: 170px;
+    min-height: 16px;
+}
+.Menu{
+    display: none;
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+    .NavButton{
+        width: 15.43vw;
+        height:3.906vw;
+        font-size: 1.2vw;
+    }
+
+    .NavItems{
+        font-size: 2vw;
+    }
+
+    .NavWrapper{
+        width: 90%;
+    }
+    
+}
+
+@media (max-width:768px){
+    .NavList{
+        display: none;
+    }
+    .NavButton{
+        display: none;
+    }
+    .Menu{
+        display: block;
+        
+    }
+    .NavWrapper{
+        width: 90%;
+    }
+}

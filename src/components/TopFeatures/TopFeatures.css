@@ -1,0 +1,122 @@
+.TopFeaturesContainer{
+    display: grid;
+grid-template-columns: 0.7fr 1fr;
+grid-template-rows: 1fr;
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+width: 100%;
+
+}
+
+.TopFeaturesLeft{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 4em;
+}
+
+.TopFeaturesRight{
+    position: relative;
+}
+
+.FeatureTopImageD{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.TopFeaturesTitle{
+    color: white;
+    font-size: 3.5vw;
+}
+
+.TopFeaturesDescription{
+    text-align: start;
+    color: gray;
+    line-height: 1.3;
+    font-weight: 600;
+    font-size: 1.6vw;
+}
+.TopfeatureContent{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: start;
+    justify-content: center;
+    width: 70%;
+}
+
+.FeatureTopImageT,.FeatureTopImageM{
+    display: none;
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+    .FeatureTopImageD,.FeatureTopImageM{
+        display: none;
+    }
+    .FeatureTopImageT{
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .TopFeaturesContainer{
+        display: grid;
+    grid-template-columns: 1fr 0.7fr ;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width: 100%;
+    
+    }
+
+    .TopfeatureContent{
+        width: 100%;
+    }
+    .TopFeaturesTitle{
+        font-size: 5vw;
+    }
+    .TopFeaturesDescription{
+        font-size: 3vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .FeatureTopImageD,.FeatureTopImageT{
+        display: none;
+    }
+    .FeatureTopImageM{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        order: 2;
+        position: absolute;
+    }
+    .TopFeaturesContainer{
+        display: flex;
+        flex-direction: column-reverse;
+  
+    
+    }
+
+    .TopFeaturesRight{
+        display: flex;
+        order: 1;
+    }
+    .TopFeaturesLeft{
+        padding: 2em;
+    }
+    .TopFeaturesTitle{
+        font-size: 9vw;
+    }
+    .TopFeaturesDescription{
+        font-size: 7vw;
+    }
+    .TopfeatureContent{
+        width: 100%;
+    }
+}
+    
